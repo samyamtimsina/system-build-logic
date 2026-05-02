@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Get in touch. Open to full-time developer roles and internships focused on building real-world systems.",
+          "Get in touch with Samyam Timsina. Open to full-time developer roles building real-world systems. Email: timsinasamyam3@gmail.com",
       },
       { property: "og:title", content: "Contact — Samyam Timsina" },
       {
@@ -26,27 +26,22 @@ function ContactPage() {
     { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
     { icon: Github, label: "GitHub", value: "samyamtimsina", href: profile.github },
     profile.linkedin
-      ? { icon: Linkedin, label: "LinkedIn", value: "Profile", href: profile.linkedin }
+      ? { icon: Linkedin, label: "LinkedIn", value: "samyam timsina", href: profile.linkedin }
       : null,
   ].filter(Boolean) as { icon: typeof Mail; label: string; value: string; href: string }[];
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-        Contact
-      </p>
+      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">Contact</p>
       <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
         Let's <span className="text-gradient">build something real</span>.
       </h1>
 
       <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
         I'm open to{" "}
-        <span className="text-foreground">
-          full-time developer roles and internships
-        </span>{" "}
-        focused on building real-world systems. If you're working on something
-        that actually matters — backend, infrastructure, healthtech, fintech —
-        I'd love to hear from you.
+        <span className="text-foreground">full-time developer roles and internships</span> focused
+        on building real-world systems. If you're working on something that actually matters —
+        backend, infrastructure, healthtech, fintech — I'd love to hear from you.
       </p>
 
       <div className="mt-12 space-y-3">

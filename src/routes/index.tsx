@@ -5,13 +5,13 @@ import { profile, projects } from "@/data/portfolio";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Samyam Timsina — Full-Stack Developer" },
+      { title: "Samyam Timsina — PERN & MERN Stack Developer" },
       {
         name: "description",
         content:
-          "Self-taught full-stack developer building real-world systems with authentication, automation, and scalable architecture.",
+          "PERN & MERN Stack Developer building real-world systems with authentication, automation, and scalable architecture.",
       },
-      { property: "og:title", content: "Samyam Timsina — Full-Stack Developer" },
+      { property: "og:title", content: "Samyam Timsina — PERN & MERN Stack Developer" },
       {
         property: "og:description",
         content:
@@ -107,9 +107,7 @@ function HomePage() {
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-2">
                 Featured
               </p>
-              <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                Latest work
-              </h2>
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Latest work</h2>
             </div>
             <Link
               to="/projects"
@@ -133,9 +131,7 @@ function HomePage() {
                   <h3 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
                     {p.title}
                   </h3>
-                  <p className="mt-4 text-muted-foreground leading-relaxed">
-                    {p.description}
-                  </p>
+                  <p className="mt-4 text-muted-foreground leading-relaxed">{p.description}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {p.features.slice(0, 4).map((f) => (
                       <span

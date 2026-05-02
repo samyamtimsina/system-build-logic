@@ -53,7 +53,12 @@ export function Footer() {
         <p className="font-mono">
           © {new Date().getFullYear()} {profile.name}
         </p>
-        <p className="font-mono">Built with React, TanStack & Tailwind.</p>
+        <a
+          href={`mailto:${profile.email}`}
+          className="font-mono hover:text-primary transition-colors"
+        >
+          {profile.email}
+        </a>
       </div>
     </footer>
   );

@@ -35,6 +35,23 @@ export const projects: Project[] = [
       "English / Nepali language support",
       "Cron-based automation for reminders (email/SMS ready)",
     ],
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Axios",
+      "React Router",
+      "Node.js",
+      "Express.js",
+      "REST API",
+      "PostgreSQL",
+      "Prisma ORM",
+      "JWT",
+      "bcrypt",
+      "Git & GitHub",
+      "Postman",
+      "dotenv",
+      "CORS",
+    ],
     liveUrl: "https://vaccination-tracker-livid.vercel.app/",
     githubUrl: "https://github.com/samyamtimsina/vaccination-tracker",
     image: vaccinationImg,
@@ -89,27 +106,35 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  "React / Next.js",
-  "Node.js",
-  "Express.js",
-  "PostgreSQL",
-  "MongoDB",
-  "Prisma ORM",
-  "Tailwind CSS",
-  "REST APIs",
-  "JWT Authentication",
-  "Role-Based Access Control",
-  "CSV / PDF Exports",
-  "Rust (basic)",
+  {
+    category: "Core",
+    items: ["Node.js", "Express.js", "React", "JavaScript", "Tailwind CSS"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgreSQL (Prisma)", "MongoDB (Mongoose)"],
+  },
+  {
+    category: "Languages",
+    items: ["C/C++", "Python"],
+  },
+  {
+    category: "Systems & Tools",
+    items: ["Linux", "Neovim", "Git"],
+  },
+  {
+    category: "Security/Auth",
+    items: ["JWT", "REST APIs"],
+  },
 ];
 
 export const profile = {
   name: "Samyam Timsina",
-  title: "Full-Stack Developer",
+  title: "PERN & MERN Stack Developer",
   tagline:
-    "Building real-world systems with authentication, automation, and scalable architecture.",
+    "Building real-world systems with authentication, automation, and scalable architecture. Equally skilled in PostgreSQL and MongoDB stacks.",
   github: "https://github.com/samyamtimsina",
-  email: "samyamtimsina@gmail.com",
-  linkedin: "",
+  email: "timsinasamyam3@gmail.com",
+  linkedin: "https://linkedin.com/in/samyam-timsina-259a19236",
   portrait: portraitImg,
 };
