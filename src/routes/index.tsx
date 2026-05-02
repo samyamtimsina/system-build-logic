@@ -37,40 +37,64 @@ function HomePage() {
         />
 
         <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20 sm:pt-32 sm:pb-28">
-          <div className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-6">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary mr-2 align-middle animate-pulse" />
-            Available for opportunities
-          </div>
+          <div className="grid items-center gap-12 md:grid-cols-[minmax(0,1fr)_320px] lg:grid-cols-[minmax(0,1fr)_380px]">
+            <div>
+              <div className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-6">
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary mr-2 align-middle animate-pulse" />
+                Available for opportunities
+              </div>
 
-          <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
-            <span className="text-gradient">{profile.name}</span>
-          </h1>
+              <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
+                <span className="text-gradient">{profile.name}</span>
+              </h1>
 
-          <p className="mt-4 font-mono text-sm text-muted-foreground sm:text-base">
-            {profile.title}
-          </p>
+              <p className="mt-4 font-mono text-sm text-muted-foreground sm:text-base">
+                {profile.title}
+              </p>
 
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            {profile.tagline}
-          </p>
+              <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
+                {profile.tagline}
+              </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              to="/projects"
-              className="group inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 hover:glow-primary"
-            >
-              View Projects
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </Link>
-            <a
-              href={profile.github}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-secondary"
-            >
-              <Github className="h-4 w-4" />
-              GitHub Profile
-            </a>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <Link
+                  to="/projects"
+                  className="group inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 hover:glow-primary"
+                >
+                  View Projects
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+                <a
+                  href={profile.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-secondary"
+                >
+                  <Github className="h-4 w-4" />
+                  GitHub Profile
+                </a>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full max-w-[320px] md:mx-0 md:justify-self-end">
+              <div className="relative overflow-hidden rounded-[28px] border border-border bg-surface-elevated shadow-[var(--shadow-card)]">
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(180deg, color-mix(in oklch, var(--background) 4%, transparent), color-mix(in oklch, var(--background) 18%, transparent))",
+                  }}
+                  aria-hidden
+                />
+                <img
+                  src={profile.portrait}
+                  alt={`Portrait of ${profile.name}`}
+                  width={928}
+                  height={1160}
+                  className="relative aspect-[4/5] w-full object-cover object-center"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
