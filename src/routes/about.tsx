@@ -53,6 +53,27 @@ function AboutPage() {
           under real usage.
         </p>
       </div>
+        </div>
+
+        <div className="order-first md:order-last">
+          <div className="relative mx-auto w-48 sm:w-56 md:w-full">
+            <div
+              className="absolute -inset-3 rounded-2xl opacity-60 blur-2xl"
+              style={{ background: "var(--gradient-glow)" }}
+              aria-hidden
+            />
+            <div className="relative overflow-hidden rounded-2xl border border-border card-surface">
+              <img
+                src={portrait}
+                alt={`Portrait of ${profile.name}`}
+                width={928}
+                height={1160}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="mt-16">
         <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-6">
