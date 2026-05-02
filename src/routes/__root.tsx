@@ -39,6 +39,13 @@ export const Route = createRootRoute({
       { name: "author", content: "Samyam Timsina" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Samyam Timsina — Full-Stack Developer" },
+      { name: "twitter:title", content: "Samyam Timsina — Full-Stack Developer" },
+      { name: "description", content: "A modern, minimal portfolio showcasing a full-stack developer's expertise in building real-world systems." },
+      { property: "og:description", content: "A modern, minimal portfolio showcasing a full-stack developer's expertise in building real-world systems." },
+      { name: "twitter:description", content: "A modern, minimal portfolio showcasing a full-stack developer's expertise in building real-world systems." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/92233bb1-a548-490b-804c-42f69c92fb1d/id-preview-c1dfe2a9--867a4438-12f3-4ae6-b24e-e5638ac76f67.lovable.app-1777716478503.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/92233bb1-a548-490b-804c-42f69c92fb1d/id-preview-c1dfe2a9--867a4438-12f3-4ae6-b24e-e5638ac76f67.lovable.app-1777716478503.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
