@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { skills } from "@/data/portfolio";
+import { skills, profile } from "@/data/portfolio";
+import portrait from "@/assets/portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -23,13 +24,15 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">About</p>
-      <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-        Engineer first, <span className="text-gradient">systems thinker</span>.
-      </h1>
+    <section className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+      <div className="grid gap-12 md:grid-cols-[1fr_280px] md:gap-14 md:items-start">
+        <div>
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">About</p>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
+            Engineer first, <span className="text-gradient">systems thinker</span>.
+          </h1>
 
-      <div className="mt-10 space-y-5 text-lg leading-relaxed text-muted-foreground">
+          <div className="mt-10 space-y-5 text-lg leading-relaxed text-muted-foreground">
         <p>
           I'm a self-taught full-stack developer. I started experimenting with
           basic HTML and CSS around 2016, and over time transitioned into
@@ -49,6 +52,27 @@ function AboutPage() {
           roles, boundaries, data flow, failure modes, and how things behave
           under real usage.
         </p>
+      </div>
+        </div>
+
+        <div className="order-first md:order-last">
+          <div className="relative mx-auto w-48 sm:w-56 md:w-full">
+            <div
+              className="absolute -inset-3 rounded-2xl opacity-60 blur-2xl"
+              style={{ background: "var(--gradient-glow)" }}
+              aria-hidden
+            />
+            <div className="relative overflow-hidden rounded-2xl border border-border card-surface">
+              <img
+                src={portrait}
+                alt={`Portrait of ${profile.name}`}
+                width={928}
+                height={1160}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="mt-16">
