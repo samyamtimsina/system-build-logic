@@ -11,9 +11,9 @@ export type Project = {
   featured?: boolean;
 };
 
-import vaccinationImg from "@/assets/project-vaccination.jpg";
-import expenseImg from "@/assets/project-expense.jpg";
-import rustImg from "@/assets/project-rust.jpg";
+import vaccinationImg from "@/assets/project-vaccination.png";
+import expenseImg from "@/assets/project-expense.png";
+import rustImg from "@/assets/project-rust.png";
 
 export const projects: Project[] = [
   {
