@@ -14,6 +14,7 @@ export type Project = {
 import vaccinationImg from "@/assets/project-vaccination.png";
 import expenseImg from "@/assets/project-expense.png";
 import rustImg from "@/assets/project-rust.png";
+import portraitImg from "@/assets/portrait-original.jpeg";
 
 export const projects: Project[] = [
   {
@@ -110,4 +111,5 @@ export const profile = {
   github: "https://github.com/samyamtimsina",
   email: "samyamtimsina@gmail.com",
   linkedin: "",
+  portrait: portraitImg,
 };

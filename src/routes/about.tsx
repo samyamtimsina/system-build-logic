@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { skills, profile } from "@/data/portfolio";
-import portrait from "@/assets/portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -64,7 +63,7 @@ function AboutPage() {
             />
             <div className="relative overflow-hidden rounded-2xl border border-border card-surface">
               <img
-                src={portrait}
+                src={profile.portrait}
                 alt={`Portrait of ${profile.name}`}
                 width={928}
                 height={1160}
